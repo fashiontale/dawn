@@ -423,5 +423,15 @@
       "copy_code_success": "Code erfolgreich kopiert",
       "print_gift_card": "Drucken"
     }
+  },
+  "fashiontale": {
+    "article": {
+      "condition" : "Zustand",
+      "condition_0": "Neu mit Etikett",
+      "condition_1": "Neuwertig",
+      "condition_2": "Gut",
+      "condition_3": "In Ordnung",
+      "condition_unknown": "Unbekannt"
+    }
   }
 }

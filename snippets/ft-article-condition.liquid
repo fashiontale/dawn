@@ -1,12 +1,12 @@
 {% case condition %}
   {% when 0 %}
-    Neu mit Etikett
+    {{ 'fashiontale.article.condition_0' | t }}
   {% when 1 %}
-    Neuwertig
+    {{ 'fashiontale.article.condition_1' | t }}
   {% when 2 %}
-    Gut
+    {{ 'fashiontale.article.condition_2' | t }}
   {% when 3 %}
-    In Ordnung
+    {{ 'fashiontale.article.condition_3' | t }}
   {% else %}
-    Unbekannt
+    {{ 'fashiontale.article.condition_unknown' | t }}
 {% endcase %}
