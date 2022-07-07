@@ -57,6 +57,7 @@
                     <facet-remove>
                       <a href="{{ value.url_to_remove }}" class="active-facets__button active-facets__button--light">
                         <span class="active-facets__button-inner button button--tertiary">
+
                           {{ filter.label }}: {{ value.label | escape }}
                           {% render 'icon-close-small' %}
                           <span class="visually-hidden">{{ 'products.facets.clear_filter' | t }}</span>
@@ -88,7 +89,7 @@
               {% case filter.type %}
               {% when 'boolean' or 'list' %}
                 {% if filter.label == 'condition' %}
-                {% assign filterLabel = 'Zustand' %}
+                {% assign filterLabel = 'fashiontale.article.condition' | t %}
                 {% else %}
                 {% assign filterLabel = filter.label %}
                 {% endif %}
@@ -141,25 +142,6 @@
                                   stroke-linecap="round"
                                   stroke-linejoin="round" />
                               </svg>
-
-                              {% liquid
-                                if filter.label == 'condition'
-                                case value.value
-                                  when '0'
-                                    assign valueLabel = 'fashiontale.article.condition_0' | t
-                                  when '1'
-                                    assign valueLabel = 'fashiontale.article.condition_1' | t
-                                  when 2
-                                    assign valueLabel = 'fashiontale.article.condition_2' | t
-                                  when 3
-                                    assign valueLabel = 'fashiontale.article.condition_3' | t
-                                  else
-                                    assign valueLabel = 'fashiontale.article.condition_unknown' | t
-                                endcase
-                                else
-                                assign valueLabel = value.label
-                              endif
-                              %}
 
                               {% capture valueLabel %} {% render 'ft-article-condition', condition: value.value %}{% endcapture %}
 
@@ -298,7 +280,18 @@
                   <facet-remove>
                     <a href="{{ value.url_to_remove }}" class="active-facets__button active-facets__button--light">
                       <span class="active-facets__button-inner button button--tertiary">
-                        {{ filter.label }}: {{ value.label | escape }}
+                        {% liquid
+                          if filter.label == 'condition'
+                            assign filterLabel = 'fashiontale.article.condition' | t
+                            capture valueLabel
+                              render 'ft-article-condition', condition: value.value
+                            endcapture
+                          else
+                            assign filterLabel = filter.label
+                            assign valueLabel = value.label
+                          endif
+                        %}
+                        {{ filterLabel }}: {{ valueLabel | escape }}
                         {% render 'icon-close-small' %}
                         <span class="visually-hidden">{{ 'products.facets.clear_filter' | t }}</span>
                       </span>
