@@ -87,10 +87,15 @@
               {%- assign total_active_values = total_active_values | plus: filter.active_values.size -%}
               {% case filter.type %}
               {% when 'boolean' or 'list' %}
+                {% if filter.label == 'condition' %}
+                {% assign filterLabel = 'Zustand' %}
+                {% else %}
+                {% assign filterLabel = filter.label %}
+                {% endif %}
                 <details id="Details-{{ forloop.index }}-{{ section.id }}" class="{% if filter_type == 'horizontal' %}disclosure-has-popup facets__disclosure{% else %} facets__disclosure-vertical{% endif %} js-filter" data-index="{{ forloop.index }}"{% if filter_type == 'vertical' and forloop.index == 1 %} open{% endif %}>
-                  <summary class="facets__summary caption-large focus-offset" aria-label="{{ filter.label }} ({{ 'products.facets.filters_selected.one' | t: count: filter.active_values.size }})">
+                  <summary class="facets__summary caption-large focus-offset" aria-label="{{ filterLabel }} ({{ 'products.facets.filters_selected.one' | t: count: filter.active_values.size }})">
                     <div>
-                      <span>{{ filter.label | escape }}{%- if filter_type == 'vertical' -%}<span class="facets__selected no-js-hidden{% if filter.active_values.size == 0 %} hidden{% endif %}"> ({{ filter.active_values.size }})</span>{% endif %}</span>
+                      <span>{{ filterLabel | escape }}{%- if filter_type == 'vertical' -%}<span class="facets__selected no-js-hidden{% if filter.active_values.size == 0 %} hidden{% endif %}"> ({{ filter.active_values.size }})</span>{% endif %}</span>
                       {% render 'icon-caret' %}
                     </div>
                   </summary>
@@ -137,10 +142,31 @@
                                   stroke-linejoin="round" />
                               </svg>
 
-                              <span aria-hidden="true">{{ value.label | escape }} ({{ value.count }})</span>
-                              <span class="visually-hidden">{{ value.label | escape }} ({% if value.count == 1 %}{{ 'products.facets.product_count_simple.one' | t: count: value.count }}{% else %}{{ 'products.facets.product_count_simple.other' | t: count: value.count }}{% endif %})</span>
+                              {% liquid
+                                if filter.label == 'condition'
+                                case value.value
+                                  when '0'
+                                    assign valueLabel = 'fashiontale.article.condition_0' | t
+                                  when '1'
+                                    assign valueLabel = 'fashiontale.article.condition_1' | t
+                                  when 2
+                                    assign valueLabel = 'fashiontale.article.condition_2' | t
+                                  when 3
+                                    assign valueLabel = 'fashiontale.article.condition_3' | t
+                                  else
+                                    assign valueLabel = 'fashiontale.article.condition_unknown' | t
+                                endcase
+                                else
+                                assign valueLabel = value.label
+                              endif
+                              %}
+
+                              {% capture valueLabel %} {% render 'ft-article-condition', condition: value.value %}{% endcapture %}
+
+                              <span aria-hidden="true">{{ valueLabel | escape }} ({{ value.count }})</span>
+                              <span class="visually-hidden">{{ valueLabel | escape }} ({% if value.count == 1 %}{{ 'products.facets.product_count_simple.one' | t: count: value.count }}{% else %}{{ 'products.facets.product_count_simple.other' | t: count: value.count }}{% endif %})</span>
                             </label>
-                          </li> 
+                          </li>
                         {%- endfor -%}
                       </ul>
                       {% comment %} No show more for no JS {% endcomment %}
@@ -177,7 +203,7 @@
                               <span aria-hidden="true">{{ value.label | escape }} ({{ value.count }})</span>
                               <span class="visually-hidden">{{ value.label | escape }} ({% if value.count == 1 %}{{ 'products.facets.product_count_simple.one' | t: count: value.count }}{% else %}{{ 'products.facets.product_count_simple.other' | t: count: value.count }}{% endif %})</span>
                             </label>
-                          </li> 
+                          </li>
                         {%- endfor -%}
                       </ul>
                     </fieldset>
@@ -347,7 +373,7 @@
                 <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
               </svg>
             </div>
-          </div>  
+          </div>
         {%- endif -%}
       </form>
     </facet-filters-form>
@@ -386,7 +412,7 @@
           {%- endif -%}
         </form>
       </facet-filters-form>
-    {%- endif -%}    
+    {%- endif -%}
   {%- endif -%}
   {% comment %}  Drawer and mobile filter {% endcomment %}
   <menu-drawer class="mobile-facets__wrapper{% if filter_type == 'horizontal' or filter_type == 'vertical' %} medium-hide large-up-hide{% endif %}" data-breakpoint="mobile">
@@ -478,7 +504,7 @@
                                   <path d="M1.5 3.5L2.83333 4.75L4.16667 6L9.5 1" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" />
                                 </svg>
 
-                                
+
                                 <span aria-hidden="true">{{ value.label | escape }} ({{ value.count }})</span>
                                 <span class="visually-hidden">{{ value.label | escape }} ({% if value.count == '1' %}{{ 'products.facets.product_count_simple.one' | t: count: value.count }}{% else %}{{ 'products.facets.product_count_simple.other' | t: count: value.count }}{% endif %})</span>
                               </label>
@@ -669,7 +695,7 @@
         {% if results.current_vendor or results.current_type %}
           <input type="hidden" name="q" value="{{ results.current_vendor }}{{ results.current_type }}">
         {% endif %}
-    
+
         {%- if results.terms -%}
           <input type="hidden" name="q" value="{{ results.terms | escape }}">
           <input name="options[prefix]" type="hidden" value="last">
