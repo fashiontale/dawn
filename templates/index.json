@@ -163,9 +163,10 @@
       "blocks": {
         "column1": {
           "type": "column",
+          "disabled": true,
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "title": "Klimaneutraler Versand",
+            "text": "<p>Wir versenden klimaneutral mit D<\/p>",
             "link_label": "",
             "link": ""
           }
