@@ -175,7 +175,7 @@
           "type": "column",
           "settings": {
             "title": "Sicher bezahlen",
-            "text": "<p>Unser einfacher Checkout akzeptiert alle gängigen Zahlungsmethoden<\/p>",
+            "text": "<p>Wir akzeptieren alle gängigen Zahlungsmethoden.<\/p>",
             "link_label": "",
             "link": ""
           }
@@ -183,8 +183,8 @@
         "column3": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "title": "Einfacher Checkout",
+            "text": "<p>Unser sicherer Checkout ist schnell und einfach zu bedienen.<\/p>",
             "link_label": "",
             "link": ""
           }
