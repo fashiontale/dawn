@@ -210,6 +210,50 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "1664297675337e57e2": {
+      "type": "rich-text",
+      "blocks": {
+        "16642976753747ad9b-0": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "<p>Talk about your brand<\/p>",
+            "heading_size": "h1"
+          }
+        },
+        "16642976753747ad9b-1": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+          }
+        },
+        "16642976753747ad9b-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Jetzt shoppen",
+            "button_link": "shopify:\/\/collections",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "16642976753747ad9b-0",
+        "16642976753747ad9b-1",
+        "16642976753747ad9b-2"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
@@ -218,6 +262,7 @@
     "rich_text",
     "collage",
     "video",
-    "multicolumn"
+    "multicolumn",
+    "1664297675337e57e2"
   ]
 }
