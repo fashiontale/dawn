@@ -187,6 +187,7 @@
       "main-password-footer": {
         "type": "main-password-footer",
         "settings": {
+          "iubenda_id": "27379262",
           "color_scheme": "accent-1"
         }
       }
