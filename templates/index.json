@@ -161,15 +161,6 @@
     "multicolumn": {
       "type": "multicolumn",
       "blocks": {
-        "column1": {
-          "type": "column",
-          "settings": {
-            "title": "Klimaneutraler Versand",
-            "text": "<p>Wir versenden klimaneutral mit DHL GoGreen.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
         "column2": {
           "type": "column",
           "settings": {
@@ -187,12 +178,21 @@
             "link_label": "",
             "link": ""
           }
+        },
+        "column1": {
+          "type": "column",
+          "settings": {
+            "title": "Klimaneutraler Versand",
+            "text": "<p>Wir versenden klimaneutral mit DHL GoGreen.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
         }
       },
       "block_order": [
-        "column1",
         "column2",
-        "column3"
+        "column3",
+        "column1"
       ],
       "settings": {
         "title": "",
@@ -201,7 +201,7 @@
         "image_ratio": "adapt",
         "columns_desktop": 3,
         "column_alignment": "center",
-        "background_style": "none",
+        "background_style": "primary",
         "button_label": "",
         "button_link": "",
         "color_scheme": "background-1",
