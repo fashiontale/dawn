@@ -139,6 +139,7 @@
         "blocks": {
           "footer-0": {
             "type": "link_list",
+            "disabled": true,
             "settings": {
               "heading": "",
               "menu": "footer"
@@ -153,9 +154,10 @@
           },
           "footer-2": {
             "type": "text",
+            "disabled": true,
             "settings": {
-              "heading": "Our mission",
-              "subtext": "<p>Share contact information, store details, and brand content with your customers.<\/p>"
+              "heading": "",
+              "subtext": "<p>Viel Spaß beim Shoppen!<\/p>"
             }
           }
         },
