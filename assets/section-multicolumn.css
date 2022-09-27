@@ -61,12 +61,12 @@
 }
 
 .multicolumn:not(.background-none) .multicolumn-card {
-  background: rgb(var(--color-background));
+  background: rgba(var(--color-base-background-2), 0.05);
   height: 100%;
 }
 
 .multicolumn.background-primary .multicolumn-card {
-  background: rgb(var(--color-background)) linear-gradient(rgba(var(--color-foreground), 0.04), rgba(var(--color-foreground), 0.04));
+  background: rgba(var(--color-base-background-2), 0.05);
 }
 
 .multicolumn-list h3 {
