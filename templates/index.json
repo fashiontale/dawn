@@ -2,6 +2,7 @@
   "sections": {
     "image_banner": {
       "type": "image-banner",
+      "disabled": true,
       "blocks": {
         "heading": {
           "type": "heading",
@@ -87,7 +88,7 @@
         "text": {
           "type": "text",
           "settings": {
-            "text": "<p>Hier steht ein längerer Text. Lalala lalelu lorem ipsum foobar Bausteine, yeah! Wieso nicht? Hier steht ein längerer Text. Lalala lalelu lorem ipsum foobar Bausteine, yeah! Wieso nicht? Hier steht ein längerer Text. Lalala lalelu lorem ipsum foobar Bausteine, yeah! Wieso nicht? Hier steht ein längerer Text. Lalala lalelu lorem ipsum foobar Bausteine, yeah! Wieso nicht? Hier steht ein längerer Text. Lalala lalelu lorem ipsum foobar Bausteine, yeah! Wieso nicht?<\/p>"
+            "text": "<p>Hier steht ein kleiner Text über Bluemir. Ein Slogan. Wie alles begann. Mehr lesen<\/p>"
           }
         }
       },
@@ -162,10 +163,9 @@
       "blocks": {
         "column1": {
           "type": "column",
-          "disabled": true,
           "settings": {
             "title": "Klimaneutraler Versand",
-            "text": "<p>Wir versenden klimaneutral mit D<\/p>",
+            "text": "<p>Wir versenden klimaneutral mit DHL GoGreen.<\/p>",
             "link_label": "",
             "link": ""
           }
