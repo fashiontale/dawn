@@ -45,9 +45,9 @@
     "card_text_alignment": "left",
     "card_color_scheme": "background-2",
     "card_border_thickness": 0,
-    "card_border_opacity": 10,
-    "card_corner_radius": 0,
-    "card_shadow_opacity": 0,
+    "card_border_opacity": 5,
+    "card_corner_radius": 40,
+    "card_shadow_opacity": 20,
     "card_shadow_horizontal_offset": 0,
     "card_shadow_vertical_offset": 4,
     "card_shadow_blur": 5,
@@ -96,6 +96,7 @@
     "predictive_search_show_vendor": false,
     "predictive_search_show_price": false,
     "currency_code_enabled": true,
+    "checkout_logo_image": "shopify:\/\/shop_images\/Bluemir_Logo_positiv.png",
     "sections": {
       "announcement-bar": {
         "type": "announcement-bar",
