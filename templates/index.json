@@ -88,7 +88,7 @@
         "text": {
           "type": "text",
           "settings": {
-            "text": "<p>Hier steht ein kleiner Text über Bluemir. Ein Slogan. Wie alles begann. Mehr lesen<\/p>"
+            "text": "<p>Hier steht ein kleiner Text über Bluemir. Ein Slogan. Wie alles begann. <a href=\"\/pages\/uber-uns\" title=\"Über uns\">Mehr lesen<\/a><\/p>"
           }
         }
       },
@@ -204,7 +204,7 @@
         "background_style": "primary",
         "button_label": "",
         "button_link": "",
-        "color_scheme": "background-1",
+        "color_scheme": "accent-1",
         "columns_mobile": "1",
         "swipe_on_mobile": false,
         "padding_top": 36,
