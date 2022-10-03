@@ -388,7 +388,7 @@ h5,
   word-break: break-word;
 }
 
-h1, h2, .h1, .h2 {
+h1, h2, .h1, .h2, .h0 {
   color: white;
   -webkit-text-stroke: 2px var(--gradient-base-accent-1);
 }
@@ -2297,7 +2297,8 @@ input[type='checkbox'] {
 
 .header__heading-logo {
   height: auto;
-  width: 100%;
+  width: 130%;
+  margin-left: -10vw;
 }
 
 @media screen and (max-width: 989px) {
@@ -2356,16 +2357,16 @@ input[type='checkbox'] {
 }
 
 .header__icon .icon {
-  height: 2rem;
-  width: 2rem;
+  height: 2.5rem;
+  width: 2.5rem;
   fill: none;
   vertical-align: middle;
 }
 
 .header__icon,
 .header__icon--cart .icon {
-  height: 4.4rem;
-  width: 4.4rem;
+  height: 5.4rem;
+  width: 5.4rem;
   padding: 0;
 }
 
