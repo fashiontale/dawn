@@ -254,6 +254,13 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
+    },
+    "166456874244a5de50": {
+      "type": "jellyfish",
+      "settings": {
+        "jumpfactor": "0.5",
+        "width": "300px"
+      }
     }
   },
   "order": [
@@ -263,6 +270,7 @@
     "collage",
     "video",
     "multicolumn",
-    "1664297675337e57e2"
+    "1664297675337e57e2",
+    "166456874244a5de50"
   ]
 }
