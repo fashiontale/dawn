@@ -55,7 +55,7 @@
             {%- assign empty_column = ' multicolumn-list__item--empty' -%}
           {%- endif -%}
 
-          <li id="Slide-{{ section.id }}-{{ forloop.index }}" class="multicolumn-list__item grid__item{% if section.settings.swipe_on_mobile %} slider__slide{% endif %}{% if section.settings.column_alignment == 'center' %} center{% endif %}{{ empty_column }}" {{ block.shopify_attributes }}>            
+          <li id="Slide-{{ section.id }}-{{ forloop.index }}" class="multicolumn-list__item grid__item{% if section.settings.swipe_on_mobile %} slider__slide{% endif %}{% if section.settings.column_alignment == 'center' %} center{% endif %}{{ empty_column }}" {{ block.shopify_attributes }}>
             <div class="multicolumn-card content-container">
               {%- if block.settings.image != blank -%}
                 {% if section.settings.image_ratio == 'adapt' or section.settings.image_ratio == 'circle' %}
@@ -85,6 +85,7 @@
                   </div>
                 </div>
               {%- endif -%}
+              <div class="multicolum-card__icon" style="--animation-delay: calc({{ forloop.index }} * 300ms)">{% render 'starfish' %}</div>
               <div class="multicolumn-card__info">
                 {%- if block.settings.title != blank -%}
                   <h3>{{ block.settings.title | escape }}</h3>
@@ -123,6 +124,22 @@
     </div>
   </div>
 </div>
+
+<script>
+const starfishObserver = new IntersectionObserver(entries => {
+  for (const entry of entries) {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('animated');
+    }
+  }
+}, { threshold: 1});
+
+const starfishs = document.querySelectorAll('.starfish');
+for (const starfish of starfishs) {
+  starfishObserver.observe(starfish);
+}
+</script>
+
 
 {% schema %}
 {

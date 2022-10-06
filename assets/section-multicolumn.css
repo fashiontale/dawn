@@ -134,6 +134,7 @@
 
 .multicolumn-card__info {
   padding: 2.5rem;
+  padding-top: 0;
 }
 
 .background-none .multicolumn-card__info {
@@ -224,5 +225,41 @@
 @media screen and (min-width: 990px) {
   .multicolumn-list__item--empty {
     display: list-item;
+  }
+}
+
+.multicolum-card__icon {
+  padding-top: 2rem;
+}
+
+.multicolum-card__icon svg {
+  width: 70px;
+  opacity: 0;
+  fill: currentColor;
+  color: #ffd100;
+}
+
+.multicolum-card__icon svg.animated {
+  animation: slideIn 1s linear var(--animation-delay) forwards;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: rotate(-45deg) translateX(-30vw);
+    opacity: 0;
+  }
+
+  30% {
+    transform: rotate(-30deg) translateX(-15vw);
+    opacity: 1;
+  }
+
+  80% {
+    transform: rotate(-15deg) translateX(0);
+  }
+
+  100% {
+    transform: rotate(0deg) translateX(0);
+    opacity: 1;
   }
 }
