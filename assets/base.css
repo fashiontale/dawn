@@ -388,7 +388,7 @@ h5,
   word-break: break-word;
 }
 
-h1, h2, .h1, .h2, .h0 {
+h1, h2:not(.footer-block__heading):not(.accordion__title), .h1, .h2:not(.footer-block__heading), .h0 {
   color: white;
   -webkit-text-stroke: 2px var(--gradient-base-accent-1);
 }
