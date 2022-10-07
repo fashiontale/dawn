@@ -1,0 +1,28 @@
+<style>
+    .ocean-ground {
+        display: flex;
+        flex-flow: row wrap;
+        width: 100%;
+        justify-content: space-between;
+        padding-top: 20px;
+    }
+
+    .ocean-ground svg {
+        --width: max(70px, 10%);
+        width: var(--width);
+        height: var(--width);
+        fill: currentColor;
+    }
+
+    .shell {
+        color: #7C6EB0;
+    }
+</style>
+
+<div class="ocean-ground">
+{% render 'seaweed' %}
+{% render 'shell1' %}
+{% render 'shell2' %}
+{% render 'seaweed2' %}
+{% render 'shell3' %}
+</div>
