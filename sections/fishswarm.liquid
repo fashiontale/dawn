@@ -1,0 +1,97 @@
+<style>
+    .swarm-container {
+        width: 100%;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        --animation-delay: 0s;
+        height: 200px;
+    }
+    .fish {
+        width: 100px;
+        fill: currentColor;
+        display: block;
+        animation: swarm 10s var(--animation-delay) infinite;
+    }
+    .fishswarm {
+        position: relative;
+        width: min(300px, 100%);
+    }
+    .fish1 {
+        transform: scale(1.1);
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        --animation-delay: 0.5s;
+    }
+    .fish2 {
+        transform: scale(0.9);
+        position: absolute;
+        top: 30px;
+        left: 150px;
+    }
+    .fish3 {
+        position: absolute;
+        top: 90px;
+        left: 50px;
+        --animation-delay: 0.35s;
+    }
+    @keyframes swarm {
+        0% {
+            transform: translateX(0px) translateY(0px);
+        }
+        23% {
+            transform: translateX(100px) translateY(20px);
+        }
+        27% {
+            transform: translateX(100px) translateY(20px) rotateY(180deg);
+        }
+        47% {
+            transform: translateX(-100px) translateY(40px) rotateY(180deg);
+        }
+        53% {
+            transform: translateX(-100px) translateY(35px) rotateY(0deg);
+        }
+        73% {
+            transform: translateX(170px) translateY(-30px) rotate(0deg);
+        }
+        77% {
+            transform: translateX(170px) translateY(-30px) rotateY(180deg);
+        }
+        97% {
+            transform: translateX(0px) translateY(0px) rotateY(180deg);
+        }
+        100% {
+            transform: translateX(0px) translateY(0px);
+        }
+    }
+
+
+</style>
+
+
+<div class="swarm-container">
+<div class="fishswarm">
+    <div class="fish1">
+        {% render 'fish' %}
+    </div>
+    <div class="fish2">
+        {% render 'fish' %}
+    </div>
+    <div class="fish3">
+        {% render 'fish' %}
+    </div>
+</div>
+</div>
+
+{% schema %}
+{
+  "name": "Fish Swarm",
+  "presets": [
+    {
+      "name": "Fish swarm",
+      "category": "Image"
+    }
+  ]
+}
+{% endschema %}
