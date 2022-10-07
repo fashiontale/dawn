@@ -899,12 +899,3 @@ class VariantRadios extends VariantSelects {
 }
 
 customElements.define('variant-radios', VariantRadios);
-
-const shakeObserver = new IntersectionObserver(entries => {
-  for (const entry of entries) {
-    const elementToShake = entry.target.querySelector('.shake-on-intersect');
-    if (!elementToShake) return;
-    elementToShake.classList.toggle('shake', entry.isIntersecting);
-  }
-})
-shakeObserver.observe(document.body);
