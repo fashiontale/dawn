@@ -388,7 +388,7 @@ h5,
   word-break: break-word;
 }
 
-h1, h2:not(.footer-block__heading):not(.accordion__title), .h1, .h2:not(.footer-block__heading), .h0 {
+h1, h2:not(.footer-block__heading):not(.accordion__title):not(.facets__heading):not(.product-count__text):not(.facet-filters__label), .h1, .h2:not(.footer-block__heading):not(.facets__heading), .h0 {
   color: white;
   -webkit-text-stroke: 2px var(--gradient-base-accent-1);
 }
