@@ -1,0 +1,52 @@
+{% style %}
+.seahorse {
+    fill: currentColor;
+    height: 80px;
+    animation: movingSeahorse 8s infinite;
+}
+@keyframes movingSeahorse {
+        0% {
+            transform: translateX(0px) translateY(0px);
+        }
+        5% {
+            transform: translateX(30px) translateY(20px);
+        }
+        7% {
+            transform: translateX(32px) translateY(0px);
+        }
+        10% {
+            transform: translateX(40px) translateY(10px);
+        }
+        12% {
+            transform: translateX(40px) translateY(10px);
+        }
+        23% {
+            transform: translateX(100px) translateY(0px);
+        }
+        27% {
+            transform: translateX(100px) translateY(20px) rotateY(180deg);
+        }
+        47% {
+            transform: translateX(-100px) translateY(40px) rotateY(180deg);
+        }
+        53% {
+            transform: translateX(-100px) translateY(35px) rotateY(0deg);
+        }
+        73% {
+            transform: translateX(170px) translateY(-30px) rotate(0deg);
+        }
+        77% {
+            transform: translateX(170px) translateY(-30px) rotateY(180deg);
+        }
+        97% {
+            transform: translateX(0px) translateY(0px) rotateY(180deg);
+        }
+        100% {
+            transform: translateX(0px) translateY(0px);
+        }
+    }
+
+{% endstyle %}
+
+
+{% render 'seahorse' %}
