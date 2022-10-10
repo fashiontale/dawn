@@ -211,6 +211,11 @@
         "padding_bottom": 36
       }
     },
+    "7b2a2fdb-c529-401d-b9e1-f82f8bae34df": {
+      "type": "fishswarm",
+      "settings": {
+      }
+    },
     "1664297675337e57e2": {
       "type": "rich-text",
       "blocks": {
@@ -269,6 +274,7 @@
     "collage",
     "video",
     "multicolumn",
+    "7b2a2fdb-c529-401d-b9e1-f82f8bae34df",
     "1664297675337e57e2",
     "166456874244a5de50"
   ]
