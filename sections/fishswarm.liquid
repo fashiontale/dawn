@@ -9,7 +9,7 @@
     }
     .fish {
         width: 100px;
-        fill: currentColor;
+        fill: url(#Fish-Gradient);
         display: block;
         animation: swarm 10s var(--animation-delay) infinite;
     }
@@ -36,6 +36,20 @@
         left: 50px;
         --animation-delay: 0.35s;
     }
+    .fish__stop1 {
+        stop-color: #7C6EB0;
+    }
+    .fish__stop2 {
+        stop-color: #5FC1CD;
+    }
+    .fish__stop3 {
+        stop-color: #7C6EB0;
+    }
+
+    .fish2  .fish__stop3 {
+        stop-color: green;
+    }
+
     @keyframes swarm {
         0% {
             transform: translateX(0px) translateY(0px);
