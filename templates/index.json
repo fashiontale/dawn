@@ -88,7 +88,7 @@
         "text": {
           "type": "text",
           "settings": {
-            "text": "<p>Hier steht ein kleiner Text über Bluemir. Ein Slogan. Wie alles begann. <a href=\"\/pages\/uber-uns\" title=\"Über uns\">Mehr lesen<\/a><\/p>"
+            "text": "<p>Hiii willkommen auf der offiziellen Bluemir Seite😍 wir haben so lange an diesem Projekt gearbeitet und jetzt ist es raus🥹 ich wünsch euch viel Spaß beim Einkaufen dieser wundervollen Produkten✨🤓<\/p>"
           }
         }
       },
@@ -258,8 +258,7 @@
     "166456874244a5de50": {
       "type": "jellyfish",
       "settings": {
-        "jumpfactor": "0.5",
-        "width": "300px"
+        "height": "330px"
       }
     }
   },
