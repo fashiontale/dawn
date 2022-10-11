@@ -157,12 +157,13 @@
     },
     "multicolumn": {
       "type": "multicolumn",
+      "disabled": true,
       "blocks": {
         "column-0": {
           "type": "column",
           "settings": {
-            "title": "Kostenlose Retouren mit PayPal",
-            "text": "<p>Wenn du mit PayPal bezahlst, kannst du dich vor dem Kauf <a href=\"https:\/\/www.paypal.com\/de\/webapps\/mpp\/refunded-returns\" title=\"auf dieser Seite einmalig anmelden\">auf dieser Seite einmalig anmelden<\/a> und bekommst Retourenkosten von PayPal erstattet!<\/p>",
+            "title": "",
+            "text": "",
             "link_label": "",
             "link": ""
           }
@@ -170,10 +171,10 @@
         "column-1": {
           "type": "column",
           "settings": {
-            "title": "Hassle-Free Exchanges",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
+            "title": "Professioneller Kundenservice",
+            "text": "<p>Bei Fragen aller Art ist unser Kundenservice für dich da!<\/p>",
+            "link_label": "Kontakt",
+            "link": "shopify:\/\/pages\/contact"
           }
         }
       },
