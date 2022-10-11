@@ -291,6 +291,7 @@
             {%- else -%}
               {{ 'sections.cart.taxes_and_shipping_at_checkout' | t }}
             {%- endif -%}
+            {% render 'free-shipping-counter' %}
           </small>
         </div>
 

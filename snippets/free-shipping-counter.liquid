@@ -1,0 +1,22 @@
+{% comment %}
+Customization
+Change the variables below to customize your shipping bar
+{% endcomment %}
+
+{% assign gd_text_before_price = "Nur noch " %}
+{% assign free_shipping = 25 %}
+{% assign gd_text_after_price = " bis zum kostenlosen Versand! " %}
+{% assign gd_text_free_shipping = " Kostenloser Versand erreicht! " %}
+
+{% comment %}
+End of the customizable zone
+{% endcomment %}
+
+{% assign shipping_price_before = free_shipping | times: 100.0 | minus: cart.total_price %}
+<div class="gd-free-shipping-bar {% if shipping_price_before > 0 %}{% endif %}">
+{% if shipping_price_before > 0 %}
+<p>{{ gd_text_before_price }} <strong class="gd-free-shipping-bar-number">{{shipping_price_before | money }}</strong> {{ gd_text_after_price }} </p>
+{% else %}
+<span class="gd-free-shipping-bar-on">{{ gd_text_free_shipping }}</span>
+{% endif %}
+</div>
