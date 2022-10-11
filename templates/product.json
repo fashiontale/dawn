@@ -49,8 +49,16 @@
           "settings": {
           }
         },
+        "5dedce2d-7c7c-4b4e-aae9-084c33e82e1c": {
+          "type": "text",
+          "settings": {
+            "text": "",
+            "text_style": "body"
+          }
+        },
         "collapsible-row-0": {
           "type": "collapsible_tab",
+          "disabled": true,
           "settings": {
             "heading": "Materialien",
             "icon": "leather",
@@ -60,15 +68,17 @@
         },
         "collapsible-row-1": {
           "type": "collapsible_tab",
+          "disabled": true,
           "settings": {
             "heading": "Versand",
             "icon": "truck",
-            "content": "<p>Wir liefern innerhalb Deutschlands von 4-5 Tagen und ab 25 Euro Bestellwert versandkostenfrei, ansonsten für 2,70 Euro (inkl. MwSt.)<\/p>",
+            "content": "<p>Wir liefern nach Deutschland für 2,70 Euro (inkl. MwSt.), ab 25 Euro Bestellwert versandkostenfrei!<\/p>",
             "page": ""
           }
         },
         "collapsible-row-2": {
           "type": "collapsible_tab",
+          "disabled": true,
           "settings": {
             "heading": "Maße und Gewicht",
             "icon": "ruler",
@@ -102,6 +112,7 @@
         "quantity_selector",
         "buy_buttons",
         "description",
+        "5dedce2d-7c7c-4b4e-aae9-084c33e82e1c",
         "collapsible-row-0",
         "collapsible-row-1",
         "collapsible-row-2",
