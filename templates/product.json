@@ -72,7 +72,7 @@
           "settings": {
             "heading": "Maße und Gewicht",
             "icon": "ruler",
-            "content": "<p>{{ product.metafields.custom.measures_and_weight.value }}<\/p>",
+            "content": "<p>{{ product.metafields.custom.dimensions.value }}<\/p><p>{{ product.metafields.custom.weight.value }}<\/p>",
             "page": ""
           }
         },
