@@ -57,10 +57,10 @@
         "show_description": false,
         "description_style": "body",
         "collection": "all",
-        "products_to_show": 8,
+        "products_to_show": 4,
         "columns_desktop": 4,
         "full_width": false,
-        "show_view_all": false,
+        "show_view_all": true,
         "view_all_style": "solid",
         "enable_desktop_slider": false,
         "color_scheme": "background-1",
@@ -73,6 +73,14 @@
         "swipe_on_mobile": false,
         "padding_top": 28,
         "padding_bottom": 36
+      }
+    },
+    "8708b710-269a-4ee9-9db9-0ddf15784c3a": {
+      "type": "shell",
+      "settings": {
+        "shell_variant": "4",
+        "padding_top": 40,
+        "padding_bottom": 52
       }
     },
     "rich_text": {
@@ -103,6 +111,14 @@
         "full_width": true,
         "padding_top": 40,
         "padding_bottom": 0
+      }
+    },
+    "5cf6c45e-f78f-4a74-a4ae-e6ffd9b0b697": {
+      "type": "shell",
+      "settings": {
+        "shell_variant": "1",
+        "padding_top": 40,
+        "padding_bottom": 52
       }
     },
     "collage": {
@@ -270,7 +286,9 @@
   "order": [
     "image_banner",
     "featured_collection",
+    "8708b710-269a-4ee9-9db9-0ddf15784c3a",
     "rich_text",
+    "5cf6c45e-f78f-4a74-a4ae-e6ffd9b0b697",
     "collage",
     "video",
     "multicolumn",
