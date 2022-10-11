@@ -51,6 +51,7 @@
         },
         "collapsible-row-0": {
           "type": "collapsible_tab",
+          "disabled": true,
           "settings": {
             "heading": "Materials",
             "icon": "leather",
@@ -61,9 +62,9 @@
         "collapsible-row-1": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Shipping & Returns",
+            "heading": "Versand",
             "icon": "truck",
-            "content": "",
+            "content": "<p>Wir liefern innerhalb Deutschlands von 4-5 Tagen und ab 25 Euro Bestellwert versandkostenfrei, ansonsten für 2,70 Euro (inkl. MwSt.)<\/p>",
             "page": ""
           }
         },
