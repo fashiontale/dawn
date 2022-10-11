@@ -71,7 +71,7 @@
         "collapsible-row-2": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Dimensions",
+            "heading": "Maße und Gewicht",
             "icon": "ruler",
             "content": "",
             "page": ""
@@ -81,7 +81,7 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "Care Instructions",
-            "icon": "heart",
+            "icon": "serving_dish",
             "content": "",
             "page": ""
           }
