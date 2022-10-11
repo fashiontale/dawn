@@ -161,8 +161,8 @@
         "column-0": {
           "type": "column",
           "settings": {
-            "title": "Free Shipping",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "title": "Kostenlose Retouren mit PayPal",
+            "text": "<p>Wenn du mit PayPal bezahlst, kannst du dich vor dem Kauf <a href=\"https:\/\/www.paypal.com\/de\/webapps\/mpp\/refunded-returns\" title=\"auf dieser Seite einmalig anmelden\">auf dieser Seite einmalig anmelden<\/a> und bekommst Retourenkosten von PayPal erstattet!<\/p>",
             "link_label": "",
             "link": ""
           }
