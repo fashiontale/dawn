@@ -266,6 +266,19 @@
                 </div>
               </details>
             </div>
+            {%- when 'page_content' -%}
+              <div>
+                {{ block.settings.page.content }}
+              </div>
+            {%- when 'delivery_time' -%}
+              <div>
+                Lieferzeit:
+                {% if product.current_variant.inventory_quantity > 0 %}
+                  {{ block.settings.page_on_stock.content }}
+                {% else %}
+                  {{ block.settings.page_preorder.content }}
+                {% endif %}
+              </div>
           {%- when 'quantity_selector' -%}
             <div class="product-form__input product-form__quantity{% if settings.inputs_shadow_vertical_offset != 0 and settings.inputs_shadow_vertical_offset < 0 %} product-form__quantity-top{% endif %}" {{ block.shopify_attributes }}>
               <label class="form__label" for="Quantity-{{ section.id }}">
@@ -972,6 +985,33 @@
           "type": "page",
           "id": "page",
           "label": "t:sections.main-product.blocks.collapsible_tab.settings.page.label"
+        }
+      ]
+    },
+    {
+      "type": "page_content",
+      "name": "Page content",
+      "settings": [
+        {
+          "type": "page",
+          "id": "page",
+          "label": "t:sections.main-product.blocks.collapsible_tab.settings.page.label"
+        }
+      ]
+    },
+    {
+      "type": "delivery_time",
+      "name": "Delivery time",
+      "settings": [
+        {
+          "type": "page",
+          "id": "page_on_stock",
+          "label": "Seite für Lieferzeit, wenn auf Lager"
+        },
+        {
+          "type": "page",
+          "id": "page_preorder",
+          "label": "Seite für Lieferzeit bei Vorbestellung"
         }
       ]
     },
