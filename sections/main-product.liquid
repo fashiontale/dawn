@@ -509,6 +509,8 @@
                 <span class="visually-hidden">{{ product.metafields.reviews.rating_count }} {{ "accessibility.total_reviews" | t }}</span>
               </p>
             {%- endif -%}
+          {%- when 'free_shipping_counter' -%}
+            {% render 'free-shipping-counter' %}
           {%- endcase -%}
         {%- endfor -%}
         <a href="{{ product.url }}" class="link product__view-details animate-arrow">
@@ -998,6 +1000,10 @@
           "label": "t:sections.main-product.blocks.collapsible_tab.settings.page.label"
         }
       ]
+    },
+    {
+      "type": "free_shipping_counter",
+      "name": "Free Shipping Counter"
     },
     {
       "type": "delivery_time",
