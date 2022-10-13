@@ -3,6 +3,18 @@
 {{ 'component-price.css' | asset_url | stylesheet_tag }}
 {{ 'component-discounts.css' | asset_url | stylesheet_tag }}
 
+{%- style -%}
+.gd-free-shipping-bar {
+  text-align: center;
+  padding-bottom: 12px;
+}
+@media screen and (min-width: 750px) {
+  .gd-free-shipping-bar {
+    text-align: right;
+  }
+}
+{%- endstyle -%}
+
 <div class="page-width{% if cart == empty %} is-empty{% endif %}" id="main-cart-footer" data-id="{{ section.id }}">
   <div>
     <div class="cart__footer">
@@ -14,6 +26,7 @@
       {%- endif -%}
 
       <div class="cart__blocks">
+        {% render 'free-shipping-counter' %}
         {% for block in section.blocks %}
           {%- case block.type -%}
             {%- when '@app' -%}
@@ -49,7 +62,6 @@
                   {%- else -%}
                     {{ 'sections.cart.taxes_and_shipping_at_checkout' | t }}
                   {%- endif -%}
-                  {% render 'free-shipping-counter' %}
                 </small>
               </div>
             {%- else -%}
