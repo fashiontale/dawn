@@ -27,6 +27,11 @@
           "settings": {
           }
         },
+        "082458d2-e34a-4872-8508-7cc8570db4b4": {
+          "type": "free_shipping_counter",
+          "settings": {
+          }
+        },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
@@ -62,6 +67,7 @@
         "title",
         "caption",
         "price",
+        "082458d2-e34a-4872-8508-7cc8570db4b4",
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
