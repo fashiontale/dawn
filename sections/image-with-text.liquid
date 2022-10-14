@@ -35,9 +35,28 @@
             loading="lazy"
             width="{{ section.settings.image.width }}"
             height="{{ section.settings.image.height }}"
+            class="ft-image-up"
           >
         {%- else -%}
           {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+        {%- endif -%}
+        {%- if section.settings.image_down != blank -%}
+          <img
+            srcset="{%- if section.settings.image_down.width >= 165 -%}{{ section.settings.image | image_url: width: 165 }} 165w,{%- endif -%}
+              {%- if section.settings.image_down.width >= 360 -%}{{ section.settings.image_down | image_url: width: 360 }} 360w,{%- endif -%}
+              {%- if section.settings.image_down.width >= 535 -%}{{ section.settings.image_down | image_url: width: 535 }} 535w,{%- endif -%}
+              {%- if section.settings.image_down.width >= 750 -%}{{ section.settings.image_down | image_url: width: 750 }} 750w,{%- endif -%}
+              {%- if section.settings.image_down.width >= 1070 -%}{{ section.settings.image_down | image_url: width: 1070 }} 1070w,{%- endif -%}
+              {%- if section.settings.image_down.width >= 1500 -%}{{ section.settings.image_down | image_url: width: 1500 }} 1500w,{%- endif -%}
+              {{ section.settings.image_down | image_url }} {{ section.settings.image_down.width }}w"
+            src="{{ section.settings.image_down | image_url: width: 1500 }}"
+            sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)"
+            alt="{{ section.settings.image_down.alt | escape }}"
+            loading="lazy"
+            width="{{ section.settings.image_down.width }}"
+            height="{{ section.settings.image_down.height }}"
+            class="ft-image-down"
+          >
         {%- endif -%}
       </div>
     </div>
@@ -66,6 +85,45 @@
   </div>
 </div>
 
+<script>
+class ScrollWatcher {
+  constructor() {
+    // Look up HTML elements to use
+    const $section = document.getElementById("shopify-section-{{ section.id }}");
+    if (!$section) {
+      console.debug("Could not find section");
+      return;
+    }
+    this.$imageWithText = $section.querySelector(".image-with-text");
+    if (!this.$imageWithText) {
+      console.debug("Could not find image with text");
+      return;
+    }
+    this.$imageUp = this.$imageWithText.querySelector(".ft-image-up");
+    this.$imageDown = this.$imageWithText.querySelector(".ft-image-down");
+    if (!this.$imageDown) return;
+
+    // Register scroll handler
+    window.addEventListener('scroll', () => this.scrollHandler());
+  }
+
+  scrollHandler = () => {
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+      if (scrollTop > this.currentScrollTop) {
+        requestAnimationFrame(() => this.$imageWithText.classList.add('scroll-down'));
+      } else {
+        requestAnimationFrame(() => this.$imageWithText.classList.remove('scroll-down'));
+      }
+
+      this.currentScrollTop = scrollTop;
+  }
+}
+
+const scrollWatcher = new ScrollWatcher();
+
+</script>
+
 {% schema %}
 {
   "name": "t:sections.image-with-text.name",
@@ -75,6 +133,11 @@
       "type": "image_picker",
       "id": "image",
       "label": "t:sections.image-with-text.settings.image.label"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_down",
+      "label": "Image 2 (scrolling down)"
     },
     {
       "type": "select",

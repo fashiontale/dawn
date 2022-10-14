@@ -327,3 +327,11 @@
     margin-left: 0;
   }
 }
+
+.image-with-text .ft-image-down, .image-with-text.scroll-down .ft-image-up {
+  opacity: 0;
+}
+
+.image-with-text.scroll-down .ft-image-down {
+  opacity: 1;
+}
