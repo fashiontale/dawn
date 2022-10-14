@@ -189,12 +189,53 @@
         "padding_top": 36,
         "padding_bottom": 28
       }
+    },
+    "12aa46b5-a808-4b40-849e-ac240e1a12fb": {
+      "type": "collection-list",
+      "blocks": {
+        "template--14524206252122__12aa46b5-a808-4b40-849e-ac240e1a12fb-1665752168e6829d80-0": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "airpod-cases"
+          }
+        },
+        "template--14524206252122__12aa46b5-a808-4b40-849e-ac240e1a12fb-1665752168e6829d80-1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "handyhullen"
+          }
+        },
+        "template--14524206252122__12aa46b5-a808-4b40-849e-ac240e1a12fb-1665752168e6829d80-2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "popsockets"
+          }
+        }
+      },
+      "block_order": [
+        "template--14524206252122__12aa46b5-a808-4b40-849e-ac240e1a12fb-1665752168e6829d80-0",
+        "template--14524206252122__12aa46b5-a808-4b40-849e-ac240e1a12fb-1665752168e6829d80-1",
+        "template--14524206252122__12aa46b5-a808-4b40-849e-ac240e1a12fb-1665752168e6829d80-2"
+      ],
+      "settings": {
+        "title": "Collections",
+        "heading_size": "h1",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "color_scheme": "background-1",
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "main",
     "image-with-text",
     "multicolumn",
-    "product-recommendations"
+    "product-recommendations",
+    "12aa46b5-a808-4b40-849e-ac240e1a12fb"
   ]
 }
