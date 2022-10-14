@@ -20,8 +20,8 @@
         "template--14524206284890__8b5aacc5-9db9-42d7-bffa-8ef0d1417c76-166575118522673744-2": {
           "type": "button",
           "settings": {
-            "button_label": "Button label",
-            "button_link": ""
+            "button_label": "Artikel ansehen",
+            "button_link": "shopify:\/\/collections"
           }
         }
       },
@@ -41,7 +41,7 @@
         "content_layout": "no-overlap",
         "color_scheme": "background-1",
         "mobile_content_alignment": "left",
-        "padding_top": 36,
+        "padding_top": 44,
         "padding_bottom": 36
       }
     },
