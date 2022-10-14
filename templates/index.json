@@ -1,5 +1,57 @@
 {
   "sections": {
+    "8b5aacc5-9db9-42d7-bffa-8ef0d1417c76": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--14524206284890__8b5aacc5-9db9-42d7-bffa-8ef0d1417c76-166575118522673744-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Hiii",
+            "heading_size": "h1"
+          }
+        },
+        "template--14524206284890__8b5aacc5-9db9-42d7-bffa-8ef0d1417c76-166575118522673744-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>...willkommen auf der offiziellen Bluemir Seite😍 Wir haben so lange an diesem Projekt gearbeitet und jetzt ist es raus🥹 Ich wünsch euch viel Spaß beim Einkaufen dieser wundervollen Produkte✨🤓<\/p>",
+            "text_style": "body"
+          }
+        },
+        "template--14524206284890__8b5aacc5-9db9-42d7-bffa-8ef0d1417c76-166575118522673744-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--14524206284890__8b5aacc5-9db9-42d7-bffa-8ef0d1417c76-166575118522673744-0",
+        "template--14524206284890__8b5aacc5-9db9-42d7-bffa-8ef0d1417c76-166575118522673744-1",
+        "template--14524206284890__8b5aacc5-9db9-42d7-bffa-8ef0d1417c76-166575118522673744-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/IMG_9831.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "5cf6c45e-f78f-4a74-a4ae-e6ffd9b0b697": {
+      "type": "shell",
+      "settings": {
+        "shell_variant": "1",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "image_banner": {
       "type": "image-banner",
       "disabled": true,
@@ -111,14 +163,6 @@
         "full_width": true,
         "padding_top": 40,
         "padding_bottom": 0
-      }
-    },
-    "5cf6c45e-f78f-4a74-a4ae-e6ffd9b0b697": {
-      "type": "shell",
-      "settings": {
-        "shell_variant": "1",
-        "padding_top": 40,
-        "padding_bottom": 52
       }
     },
     "collage": {
@@ -284,11 +328,12 @@
     }
   },
   "order": [
+    "8b5aacc5-9db9-42d7-bffa-8ef0d1417c76",
+    "5cf6c45e-f78f-4a74-a4ae-e6ffd9b0b697",
     "image_banner",
     "featured_collection",
     "8708b710-269a-4ee9-9db9-0ddf15784c3a",
     "rich_text",
-    "5cf6c45e-f78f-4a74-a4ae-e6ffd9b0b697",
     "collage",
     "video",
     "multicolumn",
