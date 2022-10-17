@@ -292,7 +292,7 @@
           "type": "column",
           "settings": {
             "title": "Klimaneutraler Versand",
-            "text": "<p>Wir versenden klimaneutral mit DHL GoGreen.<\/p>",
+            "text": "<p>Wir versenden klimaneutral mit der Deutschen Post und DHL<\/p>",
             "link_label": "",
             "link": ""
           }
