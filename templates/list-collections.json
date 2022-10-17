@@ -4,7 +4,7 @@
       "type": "main-list-collections",
       "settings": {
         "title": "Collections",
-        "sort": "alphabetical",
+        "sort": "date",
         "image_ratio": "portrait",
         "columns_desktop": 3,
         "columns_mobile": "2"
