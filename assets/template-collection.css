@@ -3,6 +3,9 @@
     flex: 0 0 100%;
     max-width: 100%;
   }
+  .collection__title.title-wrapper {
+    padding-left: calc(4rem / var(--font-body-scale));
+  }
 }
 
 @media screen and (max-width: 989px) {
