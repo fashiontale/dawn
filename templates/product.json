@@ -193,12 +193,6 @@
     "12aa46b5-a808-4b40-849e-ac240e1a12fb": {
       "type": "collection-list",
       "blocks": {
-        "template--14524206252122__12aa46b5-a808-4b40-849e-ac240e1a12fb-1665752168e6829d80-0": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "airpod-cases"
-          }
-        },
         "template--14524206252122__12aa46b5-a808-4b40-849e-ac240e1a12fb-1665752168e6829d80-1": {
           "type": "featured_collection",
           "settings": {
@@ -210,12 +204,18 @@
           "settings": {
             "collection": "popsockets"
           }
+        },
+        "template--14524206252122__12aa46b5-a808-4b40-849e-ac240e1a12fb-1665752168e6829d80-0": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "airpod-cases"
+          }
         }
       },
       "block_order": [
-        "template--14524206252122__12aa46b5-a808-4b40-849e-ac240e1a12fb-1665752168e6829d80-0",
         "template--14524206252122__12aa46b5-a808-4b40-849e-ac240e1a12fb-1665752168e6829d80-1",
-        "template--14524206252122__12aa46b5-a808-4b40-849e-ac240e1a12fb-1665752168e6829d80-2"
+        "template--14524206252122__12aa46b5-a808-4b40-849e-ac240e1a12fb-1665752168e6829d80-2",
+        "template--14524206252122__12aa46b5-a808-4b40-849e-ac240e1a12fb-1665752168e6829d80-0"
       ],
       "settings": {
         "title": "Collections",
