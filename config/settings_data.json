@@ -105,9 +105,8 @@
         "blocks": {
           "announcement-bar-0": {
             "type": "announcement",
-            "disabled": true,
             "settings": {
-              "text": "Welcome to our store",
+              "text": "Kostenloser Versand ab 25€ Bestellwert!",
               "color_scheme": "accent-2",
               "link": ""
             }
