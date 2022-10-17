@@ -116,7 +116,7 @@
         "products_to_show": 4,
         "columns_desktop": 4,
         "full_width": false,
-        "show_view_all": true,
+        "show_view_all": false,
         "view_all_style": "solid",
         "enable_desktop_slider": false,
         "color_scheme": "background-1",
@@ -129,6 +129,50 @@
         "swipe_on_mobile": false,
         "padding_top": 28,
         "padding_bottom": 36
+      }
+    },
+    "69147445-aff9-42d5-a7ca-cacf7e685920": {
+      "type": "rich-text",
+      "blocks": {
+        "template--14524206284890__69147445-aff9-42d5-a7ca-cacf7e685920-166600128716845716-0": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "<p>Talk about your brand<\/p>",
+            "heading_size": "h1"
+          }
+        },
+        "template--14524206284890__69147445-aff9-42d5-a7ca-cacf7e685920-166600128716845716-1": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+          }
+        },
+        "template--14524206284890__69147445-aff9-42d5-a7ca-cacf7e685920-166600128716845716-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Alle ansehen",
+            "button_link": "shopify:\/\/collections",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "template--14524206284890__69147445-aff9-42d5-a7ca-cacf7e685920-166600128716845716-0",
+        "template--14524206284890__69147445-aff9-42d5-a7ca-cacf7e685920-166600128716845716-1",
+        "template--14524206284890__69147445-aff9-42d5-a7ca-cacf7e685920-166600128716845716-2"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 52
       }
     },
     "8708b710-269a-4ee9-9db9-0ddf15784c3a": {
@@ -337,6 +381,7 @@
     "5cf6c45e-f78f-4a74-a4ae-e6ffd9b0b697",
     "image_banner",
     "featured_collection",
+    "69147445-aff9-42d5-a7ca-cacf7e685920",
     "8708b710-269a-4ee9-9db9-0ddf15784c3a",
     "rich_text",
     "collage",
